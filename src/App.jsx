@@ -3,7 +3,7 @@ import { HiMail, HiDownload } from "react-icons/hi";
 import { FiExternalLink } from "react-icons/fi"; // Added this icon
 import "./App.css";
 import React from "react";
-
+import Resume from "../public/Resume.pdf";
 function App() {
   const experiences = [
     {
@@ -118,7 +118,7 @@ function App() {
               </p>
 
               <a
-                href="/Resume.pdf"
+                href={Resume}
                 download="Yashaswee_Sakha_Resume.pdf"
                 className="group mt-6 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-200 hover:text-green transition-all"
               >
