@@ -162,3 +162,28 @@ p {
 body, html {
   color: var(--color-light-slate);
 }
+
+/* Enable smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for a cleaner UI (Optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background: #112240;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64ffda;
+}
+
+.nav__link:hover .nav__text {
+  color: #64ffda !important;
+  transition: all 0.3s ease;
+}
